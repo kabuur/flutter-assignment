@@ -9,10 +9,7 @@ void main() {
 
 class Main extends StatelessWidget {
   const Main({super.key});
-  final String name1 = "Ahmed Abdulkadir Mohamed";
-  final String image = 'images/l.jpg';
-  final String Titel_second_screen = "SECOND SCREEN";
-  final String Title_screen_one = "Screen one";
+  final String name1 = "Sharif Dahir Siad";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,7 +22,7 @@ class Main extends StatelessWidget {
                     PopupMenuItem(value: "Kismayo", child: Text("Kismayo"))
                   ]))
         ],
-        title: Text(Title_screen_one),
+        title: Text("Screen one"),
         centerTitle: true,
       ),
       body: Center(
@@ -33,7 +30,7 @@ class Main extends StatelessWidget {
           children: [
             SafeArea(
               child: Image(
-                image: AssetImage(image),
+                image: AssetImage('images/a.jpg'),
                 fit: BoxFit.fill,
                 // height: 200,
                 // width: 200,
@@ -52,9 +49,9 @@ class Main extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => SecondScreen(name1,Titel_second_screen,image)));
+                        builder: (context) => SecondScreen(name1)));
               },
-              child: Text("go  Second Screen"),
+              child: Text("go next Screen"),
             )
           ],
         ),

@@ -1,24 +1,22 @@
 import 'package:flutter/material.dart';
 
 class SecondScreen extends StatelessWidget {
-  const SecondScreen(this.name, this.title, this.image);
+  const SecondScreen(this.name);
 
   final String name;
-  final String title;
-  final String image;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: Text("Screen two"),
         centerTitle: true,
       ),
       body: Center(
         child: Column(
           children: [
             Image(
-              image: AssetImage(image),
+              image: AssetImage('images/a.jpg'),
               fit: BoxFit.fill,
               // height: 300,
               width: 200,
